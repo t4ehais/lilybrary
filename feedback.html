@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+				list-style: none;
+				box-sizing: border-box;
+				font-family: verdana;
+			}
+			body{
+				background-color: #f2e4d9;
+ 
+			}
+			nav{
+				background: #844454;
+				height: 80px;
+				width: 100%;
+				
+			}
+			label.logo{
+				color: #f2e4d9;
+				font-size: 25px;
+				line-height: 80px;
+				font-weight: bold;
+			}
+			nav ul{
+				float: right;
+				margin-right: 35px; 
+				padding-top: 3px;
+				
+			}
+			nav ul li{
+				display: inline-block;
+				line-height: 80px;
+				margin: 0 12px;
+			}
+			nav ul li a{
+				color: #f2e4d9;
+				font-size: 15px;
+			}
+				a.active,a:hover{
+				color: #bbb86e;
+				transition: .5s;
+			}
+
+			/* Header/Blog Title */
+            .header {
+                padding: 172px;
+                text-align: center;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("home/images/home.jfif");
+                background-position: center;
+                height: 20%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            .header h1 {
+                color:  #f2e4d9;
+                font-size: 50px;
+                font-family: papyrus, fantasy;
+            }
+			#container{
+				position: relative;
+				margin: 0 auto;
+			}
+			#middle{
+				padding-bottom: 30px;
+			}
+			#hdr{
+				height: 200px;
+			}
+			#bttmbar{
+				text-align: center;
+				font-size: 0.70em;
+				height: 4em;
+				line-height: 4em; 
+				border-top: 1px solid #f2e4d9;
+			}
+			#tabletitle{
+				padding-bottom: 10px;
+				text-align: left;
+			}
+			td{
+				
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 10px;
+				padding-top: 10px;
+			}
+			table{
+				width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			#footer{
+				background: #844454;
+			}
+			form {
+			position: relative;
+			padding: 80 50px;
+			text-align: center;
+		}
+		
+		.card {
+			width: 600px;
+			padding: 50px 50px;
+			position: relative;
+			background: #e099a6;
+			margin-left: 460px;
+            margin-right: 460px;
+			border-radius: 20px;
+            animation-name: card;
+            animation-duration: 4s;
+		}
+		
+		.inputbox {
+			margin-bottom: 30px;
+            border: none;
+            
+		}
+		
+		.inputbox input {
+			height: 30px;
+			width: 400px;
+			background: #f2e4d9;
+			border-radius: 10px;
+			margin-top: 10px;
+            border: none;
+		}
+		
+		.inputbox textarea {
+			height: 150px;
+			width: 400px;
+			background: #f2e4d9;
+			border-radius: 15px;
+			margin-top: 10px;
+            border: none;
+		}
+        .button {
+            height: 40px;
+			width: 400px;
+            border-radius: 10px;
+            background: #8f8344;
+            color: #f2e4d9;
+            border: none;
+        }
+        @keyframes card {
+            0%   {background-color: #FFD1DC;}
+            25%  {background-color: #FFC0CB;}
+            50%  {background-color: #FFB7C5;}
+            100% {background-color: #e099a6;}
+        }
+		</style>
+        <script>
+            function validate() {
+        
+                        if( document.feedbackform.name.value == "" ) {
+                            alert( "Please fill in this field completely." );
+                            document.feedbackform.name.focus() ;
+                            return false;
+                        }
+        
+                        if( document.feedbackform.email.value == "" ) {
+                            alert( "Please fill in this field completely.!" );
+                            document.feedbackform.email.focus() ;
+                            return false;
+                        }
+                        if( document.feedbackform.feedback.value == "" ) {
+                            alert( "Please fill in this field completely." );
+                            document.feedbackform.feedback.focus() ;
+                            return false;
+                        }
+                        
+                        alert("Thank you!");
+                    }
+        </script>
+			<title>Lilybrary Home</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		</head>
+	</html>
+	
+	<body>
+		<div id="container">
+			<header>
+				<div>
+					<nav>
+						<label style="padding: 0 15px;">
+							<img src="activity/images/logo.png" alt="logo" height="72" width="72" style="float: left;">
+							
+						</label>
+						<label class="logo">
+							<a href="home.html" style="color: #f2e4d9; font-family: Papyrus, fantasy;">Lilybrary</a>
+						</label>
+						<ul style="color: #f2e4d9;">
+							<li><a href="home.html">HOME</a></li>
+							<li><a href="service.html">SERVICES</a></li>
+							<li><a href="collection.html">COLLECTION</a></li>
+							<li><a href="activity.html">ACTIVITIES</a></li>
+                            <li><a href="feedback.html">FEEDBACK</a></li>
+						</ul>
+					</nav>
+				</div>
+
+            <!-- content -->
+            <main>
+                <div id="middle">
+                    <h1 style="padding-top:30px;text-align:center;font-family: Verdana;color:#844454">Please Send Your Feedback!</h1>
+                    <br>
+                    <div class="card">
+                        <form name="feedbackform" method="post" action="">
+                        <div class="inputbox">
+                            <label style="font-family: Verdana; font-weight: bold; color:#65761b" for="name">Name</label><br>
+                            <input type="text" id="name" name="name"><br>
+                        </div>
+                        <div class="inputbox">
+                            <label style="font-family: Verdana; font-weight: bold; text-align:justify; color:#65761b" for="email">Email</label><br>
+                            <input type="text" id="email" name="email"><br>
+                        </div>
+                            
+                        <div class="inputbox">
+                            <label  style="font-family: Verdana; font-weight: bold; text-align:justify; color:#65761b" for="feedback">Feedback</label><br>
+                            <textarea type="text" id="feedback" name="feedback"></textarea><br>
+                        </div>
+                            <button style="font-family: Verdana; font-weight: bold;" class="button" type="submit" onclick="return validate()">Submit</button>
+                            <br><br>
+                            <button style="font-family: Verdana; font-weight: bold;" class="button" type="reset">Reset</button><br><br>
+                        </form>
+                        
+                    </div><br>
+                </div>
+            </main>
+		</div>
+	
+		<div id="footer">
+			<br>
+			<h4 style="color: #f2e4d9; text-align: center;">CONTACT US</h4>
+			<br>
+			<table id="middle" style="color: #f2e4d9">
+				<tr>
+					<th>
+						Contact Number
+					</th>
+					<th>
+						E-mail
+					</th>
+					<th>
+						Instagram
+					</th>
+					<th>
+						TikTok
+					</th>
+				</tr>
+				<tr>
+					<td>
+						012-3456789
+					</td>
+					<td>
+						lilybrary@gmail.com
+					</td>
+					<td>
+						@lilybrary.my
+					</td>
+					<td>
+						@lilybrary.my
+					</td>
+				</tr>
+			</table>
+			<div id="bttmbar" style="color: #f2e4d9">&copy; lilybrary</div>
+		</div>
+	</body>
+	
